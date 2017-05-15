@@ -35,9 +35,9 @@ Gradle <span class="hljs-number">3.5</span>
 <h1><a id="Create_a_simple_web_application_29"></a>Create a simple web application</h1>
 <p>Now you can create a web controller for a simple web application.</p>
 <blockquote>
-<p>src/main/java/hello/HelloController.java</p>
+<p>src/main/java/com/otw/hello/HelloController.java</p>
 </blockquote>
-<pre><code class="language-java"><span class="hljs-keyword">package</span> hello;
+<pre><code class="language-java"><span class="hljs-keyword">package</span> com.otw.hello;
 
 <span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.RestController;
 <span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.RequestMapping;
@@ -55,9 +55,9 @@ Gradle <span class="hljs-number">3.5</span>
 <h1><a id="Create_an_Application_class_48"></a>Create an Application class</h1>
 <p>Here you create an Application class with the components:</p>
 <blockquote>
-<p>src/main/java/hello/Application.java</p>
+<p>src/main/java/com/otw/hello/Application.java</p>
 </blockquote>
-<pre><code class="language-java"><span class="hljs-keyword">package</span> hello;
+<pre><code class="language-java"><span class="hljs-keyword">package</span> com.otw.hello;
 
 <span class="hljs-keyword">import</span> java.util.Arrays;
 
@@ -96,7 +96,7 @@ Gradle <span class="hljs-number">3.5</span>
 <h3><a id="create_your_build_file_88"></a>create your build file</h3>
 <blockquote>
 <p>root directory of your application<br>
-\gradle.build</p>
+\build.gradle</p>
 </blockquote>
 <pre><code class="language-gradle"><span class="hljs-keyword">buildscript</span> {
     <span class="hljs-keyword">repositories</span> {
@@ -138,13 +138,13 @@ jar {
 }
 </code></pre>
 <h3><a id="Test_your_build_131"></a>Test your build</h3>
-<pre><code class="language-sh">c:\&gt;gradle build
+<pre><code class="language-sh"><span class="hljs-variable">$workspace</span>/hello/gradle build
 </code></pre>
 <h3><a id="Install_the_gradle_warper_135"></a>Install the gradle warper</h3>
-<pre><code class="language-sh">c:\&gt;gradle wrapper --gradle-version <span class="hljs-number">3.5</span>
+<pre><code class="language-sh"><span class="hljs-variable">$workspace</span>/hello/gradle wrapper --gradle-version <span class="hljs-number">3.5</span>
 </code></pre>
 <h3><a id="Build_with_wrapper_and_run_application_139"></a>Build with wrapper and run application</h3>
-<pre><code class="language-sh">c:\&gt;gradlew build &amp;&amp; java -jar build/libs/hello-<span class="hljs-number">0.1</span>.<span class="hljs-number">0</span>.jar
+<pre><code class="language-sh"><span class="hljs-variable">$workspace</span>/hello/gradlew build &amp;&amp; java -jar build/libs/hello-<span class="hljs-number">0.1</span>.<span class="hljs-number">0</span>.jar
 </code></pre>
 <h1><a id="References_143"></a>References</h1>
 <p><a href="https://spring.io/guides/gs/spring-boot/#scratch">https://spring.io/guides/gs/spring-boot/#scratch</a><br>

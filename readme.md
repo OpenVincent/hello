@@ -29,9 +29,9 @@ c:\>mkdir \workspaces\otw\hello\src\main\java\com\open\hello
 ---
 # Create a simple web application
 Now you can create a web controller for a simple web application.
-> src/main/java/hello/HelloController.java
+> src/main/java/com/otw/hello/HelloController.java
 ```java
-package hello;
+package com.otw.hello;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -48,9 +48,9 @@ public class HelloController {
 ```
 # Create an Application class
 Here you create an Application class with the components:
-> src/main/java/hello/Application.java
+> src/main/java/com/otw/hello/Application.java
 ```java
-package hello;
+package com.otw.hello;
 
 import java.util.Arrays;
 
@@ -88,7 +88,7 @@ public class Application {
 # Build your application and run it
 ### create your build file
 > root directory of your application
-> \gradle.build
+> \build.gradle
 ```gradle
 buildscript {
     repositories {
@@ -131,15 +131,15 @@ dependencies {
 ```
 ### Test your build
 ```sh
-c:\>gradle build
+$workspace/hello/gradle build
 ```
 ### Install the gradle warper
 ```sh
-c:\>gradle wrapper --gradle-version 3.5
+$workspace/hello/gradle wrapper --gradle-version 3.5
 ```
 ### Build with wrapper and run application
 ```sh
-c:\>gradlew build && java -jar build/libs/hello-0.1.0.jar
+$workspace/hello/gradlew build && java -jar build/libs/hello-0.1.0.jar
 ```
 # References
 https://spring.io/guides/gs/spring-boot/#scratch
