@@ -1,4 +1,4 @@
-package com.otw.hello;
+package com.open.workshop.hello;
 
 import java.util.Arrays;
 

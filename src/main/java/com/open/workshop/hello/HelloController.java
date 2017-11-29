@@ -1,4 +1,4 @@
-package com.otw.hello;
+package com.open.workshop.hello;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

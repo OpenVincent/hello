@@ -31,7 +31,7 @@ c:\>mkdir \workspaces\otw\hello\src\main\java\com\open\hello
 Now you can create a web controller for a simple web application.
 > src/main/java/com/otw/hello/HelloController.java
 ```java
-package com.otw.hello;
+package com.open.workshop.hello;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -50,7 +50,7 @@ public class HelloController {
 Here you create an Application class with the components:
 > src/main/java/com/otw/hello/Application.java
 ```java
-package com.otw.hello;
+package com.open.workshop.hello;
 
 import java.util.Arrays;
 
